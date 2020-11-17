@@ -18,7 +18,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // 4) import data from csv using d3 and then parse the data
-d3.csv("../assets/data/data.csv").then(function(healthData) {
+d3.csv("assets/data/data.csv").then(function(healthData) {
    healthData.forEach(function(data) {
     data.poverty = +data.poverty;
     data.healthcare = +data.healthcare;
